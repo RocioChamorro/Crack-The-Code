@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
-    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
 </head>
 
 <body>
@@ -85,6 +84,12 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
+                                            <a href="reportes.html" class="nav-link" id="blod_pages">
+                                                    Reportes
+                                                </a>
+                                        </li>
+
+                                        <li class="nav-item">
                                             <a href="inscripciones.html" class="nav-link"><i
                                                     class="fa fa-search"></i></a>
                                         </li>
@@ -136,7 +141,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres" name="name-of-student" required>
+                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres" name="name-of-student">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -417,8 +422,8 @@
     <script src="assets/js/bootnavbar.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="module" src="./controller/form.js"></script>
-    <script type="module" src="controller/main.js"></script>
-    <script type="module" src="controller/index.js"></script>
+    <script type="module" src="./controller/main.js"></script>
+    <script type="module" src="./controller/index.js"></script>
 
 </body>
 
