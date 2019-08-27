@@ -45,12 +45,24 @@ CSS Index
 *  3.Media Query
 * ============================
 */
-
+.progress-indicator {
+    margin: 5px 0 1em;
+    padding: 22px 0 0;
+}
+#container-btn {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
 .form2 {
     display: none;
 }
 
 .form3 {
+    display: none;
+}
+
+.form4 {
     display: none;
 }
 

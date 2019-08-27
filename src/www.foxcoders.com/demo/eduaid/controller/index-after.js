@@ -1,4 +1,4 @@
-import { saveDataofInscription, gettingDataFromFirebase } from './firestore.js';
+import { saveDataofInscription } from './firestore.js'
 
 //datos del estudiante
 const nameOfStudents = document.querySelector('#nameOfStudent');
@@ -23,8 +23,7 @@ const cellphoneAttorney = document.querySelector('#cellphoneAttorney');
 const sendData = document.querySelector('#btnSubmit');
 
 //boton siguiente 
-//const btnNext = document.querySelector('#btnProgress');
-//const btnGetting = document.querySelector('#getting-data');
+const btnNext = document.querySelector('#btnProgress');
 
 
 sendData.addEventListener('click', () => {
@@ -46,35 +45,13 @@ sendData.addEventListener('click', () => {
         cellphoneAttorney: cellphoneAttorney.value
     }
     sessionStorage.setItem('all-data', JSON.stringify(obj));
-    saveDataofInscription('clases-pruebas', obj);
+    //  JSON.parse(sessionStorage.getItem('all-data')
+    saveDataofInscription('clases-after', obj);
 
 })
 
 
-
-/* document.getElementById("btn-After-school").addEventListener('click', () => {
-
-    const obj = {
-        nameOfStudents: nameOfStudents.value,
-        lastNameOfStudent: lastNameOfStudent.value,
-        dniOfStudent: dniOfStudent.value,
-        yearOfStudent: yearOfStudent.value,
-        schoolOfStudent: schoolOfStudent.value,
-        user_class: user_class.value,
-        nameOfFather: nameOfFather.value,
-        lastNameOfFather: lastNameOfFather.value,
-        dniOfFather: dniOfFather.value,
-        cellphoneOfFather: cellphoneOfFather.value,
-        emailOfFather: emailOfFather.value,
-        nameAttorney: nameAttorney.value,
-        lastNameAttorney: lastNameAttorney.value,
-        parentescoAttorney: parentescoAttorney.value,
-        cellphoneAttorney: cellphoneAttorney.value
-    }
-    saveDataofInscription('After-school', obj);
-}) */
-
-/* const validateInformationOfStudent = () => {
+const validateInformationOfStudent = () => {
 
     let correctInformation = true;
     if (nameOfStudents.value.length < 2) {
@@ -99,5 +76,5 @@ sendData.addEventListener('click', () => {
 
 btnNext.addEventListener('click', () => {
     validateInformationOfStudent();
-}) */
+})
 

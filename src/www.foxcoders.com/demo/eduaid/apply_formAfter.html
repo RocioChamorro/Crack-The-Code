@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!--  After school -->
 
 <!-- Mirrored from www.foxcoders.com/demo/eduaid/apply_form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Aug 2019 23:24:13 GMT -->
 
@@ -20,6 +20,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
 </head>
 
 <body>
@@ -57,7 +58,9 @@
                                 <div class="mobile_site_logo">
                                     <a href=""><img src="assets/images/logo_2.png" alt="logo" class="img-fluid"></a>
                                 </div>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
+                                    aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="fa fa-bars"></i>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -84,12 +87,6 @@
                                             </a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="reportes.html" class="nav-link" id="blod_pages">
-                                                    Reportes
-                                                </a>
-                                        </li>
-
-                                        <li class="nav-item">
                                             <a href="inscripciones.html" class="nav-link"><i
                                                     class="fa fa-search"></i></a>
                                         </li>
@@ -104,7 +101,8 @@
         </div>
     </header>
 
-    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)" data-aos="fade-up">
+    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)"
+        data-aos="fade-up">
         <div class="hero-area">
             <div class="container">
                 <div class="row">
@@ -128,6 +126,7 @@
                 <li id='step1' class='step completed'> <span class="bubble"></span> Step 1. </li>
                 <li id='step2' class='step'> <span class="bubble"></span> Step 2. </li>
                 <li id='step3' class='step'> <span class="bubble"></span> Step 3. </li>
+                <li id='step4' class='step'> <span class="bubble"></span> Step 4. </li>
             </ul>
         </div>
         <div class="container">
@@ -141,13 +140,15 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres" name="name-of-student">
+                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres"
+                                            name="name-of-student" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameOfStudent" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfStudent" class="form-control"
+                                            placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -161,7 +162,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Fecha de Nacimiento</label>
-                                        <input type="text" id="yearOfStudent" class="form-control" placeholder="Día/Mes/Año">
+                                        <input type="text" id="yearOfStudent" class="form-control"
+                                            placeholder="Día/Mes/Año">
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +171,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_last_name">Colegio</label>
-                                        <input type="text" id="schoolOfStudent" class="form-control" placeholder="Colegio">
+                                        <input type="text" id="schoolOfStudent" class="form-control"
+                                            placeholder="Colegio">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -205,7 +208,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameOfFather" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfFather" class="form-control"
+                                            placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -219,7 +223,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" id="cellphoneOfFather" class="form-control" placeholder="Celular">
+                                        <input type="text" id="cellphoneOfFather" class="form-control"
+                                            placeholder="Celular">
                                     </div>
                                 </div>
                             </div>
@@ -248,7 +253,8 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameAttorney" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameAttorney" class="form-control"
+                                            placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -256,21 +262,38 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_first_name">Parentesco</label>
-                                        <input type="text" id="parentescoAttorney" class="form-control" placeholder="Parentesco">
+                                        <input type="text" id="parentescoAttorney" class="form-control"
+                                            placeholder="Parentesco">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" id="cellphoneAttorney" class="form-control" placeholder="Celular">
+                                        <input type="text" id="cellphoneAttorney" class="form-control"
+                                            placeholder="Celular">
                                     </div>
                                 </div>
                             </div>
                         </form>
+                        <form action="#" class="apply_form bg_dark_9 p-5 form4" id="form-4">
+                            <h2>Formas de pagos</h2>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <label for="user_last_name">Pagar Ahora</label>
+                                    <button id='pagarAhora' value='PagarAhora' type="button"><img class="materialboxed" width="250" src="./images/pago-ahora.jpeg"></button>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="user_last_name">Pagar presencial</label>
+                                    <button id='pagarPresencial' value='PagarPresencial' type="button"><img class="materialboxed" width="250" src="./images/pago-presencial.jpeg"></button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
+                    <div id='container-btn'>
                     <button id='btnLess' class="button_two mt-7">Atras</button>
                     <button id='btnSubmit' class="button_two mt-7 btn-submit">Submit</button>
                     <button id='btnProgress' class="button_two mt-7">Siguiente</button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -294,7 +317,8 @@
                                 <div class="col-md-6">
                                     <div class="subscribe-form">
                                         <form action="#">
-                                            <input type="email" class="form-control" placeholder="Enter Your Email Here">
+                                            <input type="email" class="form-control"
+                                                placeholder="Enter Your Email Here">
                                             <button type="submit">Subscribe</button>
                                         </form>
                                     </div>
@@ -305,7 +329,6 @@
                 </div>
             </div>
         </div>
-    
         <div class="footer-area default_bg">
             <div class="footer-top section-ptb-2">
                 <div class="container">
@@ -314,7 +337,8 @@
                             <div class="single_widget my-xs-4">
                                 <div class="address-widget">
                                     <div class="footer-logo">
-                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt="" class="img-fluid"></a>
+                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt=""
+                                                class="img-fluid"></a>
                                     </div>
                                     <p>900 Lucerne Station Road Terrace, Orlando, FL 32806, USA contact@eduaid.com</p>
                                     <span>+892 5555 444</span>
@@ -421,9 +445,9 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/bootnavbar.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="module" src="./controller/form.js"></script>
-    <script type="module" src="./controller/main.js"></script>
-    <script type="module" src="./controller/index.js"></script>
+    <script type="module" src="./controller/form-after.js"></script>
+    <script type="module" src="controller/main.js"></script>
+    <script type="module" src="controller/index-after.js"></script>
 
 </body>
 
