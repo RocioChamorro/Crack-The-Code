@@ -204,7 +204,7 @@ CSS Index
 .button_one {
   display: inline-block;
   position: relative;
-  background-color: #28408f;
+  background-color: #201C59;
   border: 0;
   color: #fff;
   padding: 15px 25px;
@@ -215,13 +215,13 @@ CSS Index
   font-size: 14px; }
   .button_one:hover {
     text-decoration: none;
-    background-color: rgba(255, 82, 2, 0.85);
+    background-color: #6F63AB;
     color: #fff; }
 
 .special-button {
   display: inline-block;
   position: relative;
-  background-color: #ff5202;
+  background-color: #C64696;
   border: 0;
   color: #fff;
   padding: 16px 80px 16px 16px;
@@ -472,7 +472,7 @@ CSS Index
       display: block;
       position: relative;
       padding: 10px;
-      color: #002147;
+      color: #ffffff;
       transition: all .4s linear 0s;
       font-size: 16px; }
       .theme-list-4 ul li:hover a {
@@ -494,7 +494,7 @@ CSS Index
     font-size: 18px;
     font-weight: 500; }
   .section-title h2 {
-    color: #002147;
+    color: #ffffff;
     font-size: 50px;
     font-family: "Poppins";
     font-weight: 600; }
