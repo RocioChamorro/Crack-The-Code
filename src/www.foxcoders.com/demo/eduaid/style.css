@@ -64,6 +64,7 @@ CSS Index
 
 .form3 {
     display: none;
+    padding: 0;
 }
 #labe{
     margin: 1px 9px 15px 40px;
@@ -73,21 +74,27 @@ input[type=checkbox], input[type=radio] {
     padding: 0;
     margin: -18px 13px 0px 16px;
 }
+
 .imgRedonda {
-    width: 150px; height: 150px; border-radius: 150px; -webkit-border-radius: 150px; -moz-border-radius: 150px
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px
 }
 
 .form4 {
     display: none;
 }
-#player{
+
+#player {
     display: none;
 }
 
 #btnSubmit {
     display: none;
-    
 }
+
 #capture {
     display: none;
 }
@@ -462,7 +469,6 @@ input[type=checkbox], input[type=radio] {
     font-weight: 500;
     border-radius: 30px;
     text-transform: uppercase;
-    box-shadow: 0 0.5rem 1rem rgba(20, 189, 238, 0.35);
 }
 
 .button_two:hover {
@@ -1061,6 +1067,35 @@ p2 {
 
 .color-text {
     color: #fff;
+}
+
+#btnLess {
+    display: inline-block;
+    position: relative;
+    border: 1px solid;
+    color: #C64699;
+    padding: 14px 35px;
+    transition: all .4s linear 0s;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    border-color: #C64699;
+    background: white;
+}
+
+.btn-captura {
+    width: 22%;
+    border: 0;
+}
+
+.materialboxed {
+    width: 51%;
+}
+
+.design-color {
+    margin-left: 29%;
+    margin-top: 3%;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

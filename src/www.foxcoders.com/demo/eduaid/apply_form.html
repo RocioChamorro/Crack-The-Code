@@ -57,9 +57,7 @@
                                 <div class="mobile_site_logo">
                                     <a href=""><img src="assets/images/logo_2.png" alt="logo" class="img-fluid"></a>
                                 </div>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="fa fa-bars"></i>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -106,8 +104,7 @@
         </div>
     </header>
 
-    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)"
-        data-aos="fade-up">
+    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)" data-aos="fade-up">
         <div class="hero-area">
             <div class="container">
                 <div class="row">
@@ -143,15 +140,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres"
-                                            name="name-of-student">
+                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres" name="name-of-student">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameOfStudent" class="form-control"
-                                            placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfStudent" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -165,8 +160,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Fecha de Nacimiento</label>
-                                        <input type="text" id="yearOfStudent" class="form-control"
-                                            placeholder="Día/Mes/Año">
+                                        <input type="text" id="yearOfStudent" class="form-control" placeholder="Día/Mes/Año">
                                     </div>
                                 </div>
                             </div>
@@ -174,8 +168,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_last_name">Colegio</label>
-                                        <input type="text" id="schoolOfStudent" class="form-control"
-                                            placeholder="Colegio">
+                                        <input type="text" id="schoolOfStudent" class="form-control" placeholder="Colegio">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -211,8 +204,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameOfFather" class="form-control"
-                                            placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfFather" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -226,8 +218,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" id="cellphoneOfFather" class="form-control"
-                                            placeholder="Celular">
+                                        <input type="text" id="cellphoneOfFather" class="form-control" placeholder="Celular">
                                     </div>
                                 </div>
                             </div>
@@ -259,8 +250,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" id="lastNameAttorney" class="form-control"
-                                            placeholder="Apellidos">
+                                        <input type="text" id="lastNameAttorney" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -268,24 +258,41 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_first_name">Parentesco</label>
-                                        <input type="text" id="parentescoAttorney" class="form-control"
-                                            placeholder="Parentesco">
+                                        <input type="text" id="parentescoAttorney" class="form-control" placeholder="Parentesco">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" id="cellphoneAttorney" class="form-control"
-                                            placeholder="Celular">
+                                        <input type="text" id="cellphoneAttorney" class="form-control" placeholder="Celular">
                                     </div>
                                 </div>
+                                <div class="col-md-12">
+                                    <label>Por cuestiones de seguridad puede subir la imagen del apoderado (Opcional)</label>
+                                </div>
                                 <div class="col-md-6">
+
                                     <div class="form-group">
                                         <video id="player" controls autoplay class="photo"></video>
                                         <label id='labelTomarFoto' for="user_last_name">Tomar Foto</label>
-                                        <button id='iniciarCamara' type="button"><img class="materialboxed" width="250"
-                                                src="./images/icoFoto.jpeg" alt="foto"></button>
-                                        <button id='capture' type="button">Capturar</button>
+                                        <div class="div-img">
+                                            <button class="btn-captura" id='iniciarCamara' type="button"><img class="materialboxed" width="250"
+                                                    src="https://image.flaticon.com/icons/svg/149/149641.svg" alt="foto"></button>
+                                            <button id='capture' type="button">Capturar</button>
+                                        </div>
+                                        <br>
+
+                                        <label id='labelTomarFoto' for="user_last_name">Subir foto</label>
+
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">Upload</span>
+                                            </div>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="inputGroupFile01">
+                                                <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
+                                            </div>
+                                        </div>
                                         <canvas id="snapshot" width=320 height=240></canvas>
                                     </div>
                                 </div>
@@ -295,7 +302,7 @@
                             <h2>Registro de foto del apoderado</h2>
 
 
-                           <!--  <div class="">
+                            <!--  <div class="">
 
                                 <canvas id="canvasProfile" class="materialboxed" width="250"></canvas>
                             </div> -->
@@ -314,9 +321,26 @@
                             </div>
                         </form>
                     </div>
-                    <button id='btnLess' class="button_two mt-7">Atras</button>
-                    <button id='btnSubmit' class="button_two mt-7 btn-submit">Submit</button>
-                    <button id='btnProgress' class="button_two mt-7">Siguiente</button>
+                    <div class="design-color">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="row">
+                                    <div class="col-md-5">
+                                        <button id='btnLess' class="mt-7">Atrás</button>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <button id='btnProgress' class="button_two mt-7">Siguiente</button>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-4">
+                                <button id='btnSubmit' class="button_two mt-7 btn-submit">Envíar</button>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -324,104 +348,47 @@
     </div>
     <!-- End Page -->
     <!-- Start Footer -->
-    <footer data-aos="fade-up">
-        <div class="subscribe-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="subscribe-wrapper p-5 bg-white">
-                            <div class="row align-items-center">
-                                <div class="col-md-6">
-                                    <div class="subscribe-text">
-                                        <h2>Newsletters</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempoe</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="email" class="form-control"
-                                                placeholder="Enter Your Email Here">
-                                            <button type="submit">Subscribe</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
+    <footer data-aos="fade-up" data-aos-delay="300">
         <div class="footer-area default_bg">
-            <div class="footer-top section-ptb-2">
+            <div class="footer-top section-ptb">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single_widget my-xs-4">
+                        <div class="col-lg-3 col-md-6 mb-xs-5">
+                            <div class="single_widget">
                                 <div class="address-widget">
                                     <div class="footer-logo">
-                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt=""
-                                                class="img-fluid"></a>
+                                        <a href="index-2.html"><img src="assets/images/LOGO_01.png" alt="" class="img-fluid"></a>
                                     </div>
-                                    <p>900 Lucerne Station Road Terrace, Orlando, FL 32806, USA contact@eduaid.com</p>
-                                    <span>+892 5555 444</span>
+                                    <p>Empoderando a niños y jóvenes a través del código y la tecnología</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-3d-5">
                             <div class="single_widget">
-                                <h3>Useful Links</h3>
+                                <h3>Contacto</h3>
                                 <div class="widget-list">
                                     <ul>
-                                        <li><a href="#">About Us</a></li>
-                                        <li><a href="#">Our Instructors</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">History</a></li>
-                                        <li><a href="#">Privacy Policy</a></li>
-                                        <li><a href="#">Service Plus</a></li>
+                                        <li><a href="#">+51 (924 084 937)</a></li>
+                                        <li><a href="#">01 488 7418</a></li>
+                                        <li><a href="#">crack@crackthecode.pe</a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-md-6 mb-xs-5">
                             <div class="single_widget">
-                                <h3>Our Services</h3>
+                                <h3>Otros Servicios</h3>
                                 <div class="widget-list">
                                     <ul>
-                                        <li><a href="#">CSE Engeering</a></li>
-                                        <li><a href="#">Graduation</a></li>
-                                        <li><a href="#">Courses</a></li>
-                                        <li><a href="#">Admission</a></li>
-                                        <li><a href="#">Internation</a></li>
-                                        <li><a href="#">Faqs</a></li>
+                                        <li><a href="#">Innova Schools</a></li>
+                                        <li><a href="#">Trabaja con Nosotros</a></li>
+
                                     </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-md-6">
-                            <div class="single_widget">
-                                <h3>Latest News</h3>
-                                <div class="widget-item">
-                                    <div class="widget-image">
-                                        <a href="#"><img src="assets/images/blog_01.jpg" alt="blog one" /></a>
-                                    </div>
-                                    <div class="widget-content">
-                                        <h5><a href="#">7 Step Social Media Marke ting Strategy</a></h5>
-                                        <div class="widget-meta">
-                                            <span>05 Jan 2019</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="widget-item">
-                                    <div class="widget-image">
-                                        <a href="#"><img src="assets/images/blog_02.jpg" alt="blog one" /></a>
-                                    </div>
-                                    <div class="widget-content">
-                                        <h5><a href="#">7 Step Social Media Marke ting Strategy</a></h5>
-                                        <div class="widget-meta">
-                                            <span>05 Jan 2019</span>
-                                        </div>
+                                    <div class="social-accounts">
+                                        <ul>
+                                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -429,32 +396,11 @@
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom-wrapper border-top py-3">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="footer-bottom">
-                                <div class="copyright-text">
-                                    <p>Eduaid 2019. All Rights Reserved.</p>
-                                </div>
-                                <div class="social-accounts">
-                                    <ul>
-                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="scroll-top">
+                <div class="scroll-icon">
+                    <i class="fa fa-angle-up"></i>
                 </div>
             </div>
-        </div>
-        <div class="scroll-top">
-            <div class="scroll-icon">
-                <i class="fas fa-arrow-down"></i>
-            </div>
-        </div>
     </footer>
     <!-- End Footer -->
     <script src="assets/js/jquery-3.4.0.min.js"></script>
