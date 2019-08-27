@@ -65,8 +65,15 @@ CSS Index
 .form4 {
     display: none;
 }
+#player{
+    display: none;
+}
 
 #btnSubmit {
+    display: none;
+    
+}
+#capture {
     display: none;
 }
 

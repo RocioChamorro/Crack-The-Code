@@ -1,4 +1,7 @@
 import { saveDataofInscription, gettingDataFromFirebase } from './firestore.js';
+import { capturePhoto} from './photo.js'
+/* import { getsessionStorage} from './controller-perfil.js' */
+
 
 //datos del estudiante
 const nameOfStudents = document.querySelector('#nameOfStudent');
@@ -25,10 +28,13 @@ const sendData = document.querySelector('#btnSubmit');
 //boton siguiente 
 //const btnNext = document.querySelector('#btnProgress');
 //const btnGetting = document.querySelector('#getting-data');
+capturePhoto();
+/* getsessionStorage(); */
 
-
+const url = sessionStorage.getItem('url');
 sendData.addEventListener('click', () => {
     const obj = {
+        photo: url,
         nameOfStudents: nameOfStudents.value,
         lastNameOfStudent: lastNameOfStudent.value,
         dniOfStudent: dniOfStudent.value,
