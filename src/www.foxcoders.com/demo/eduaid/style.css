@@ -39,6 +39,7 @@ CSS Index
 ------------------------------------------------------------------------------*/
 
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,500i,600|Rubik:400,500,700&amp;display=swap");
+@import url('//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css');
 
 /**
 * ============================
@@ -65,7 +66,14 @@ CSS Index
     display: none;
     padding: 0;
 }
-
+#labe{
+    margin: 1px 9px 15px 40px;
+}
+input[type=checkbox], input[type=radio] {
+    box-sizing: border-box;
+    padding: 0;
+    margin: -18px 13px 0px 16px;
+}
 .imgRedonda {
     width: 150px;
     height: 150px;

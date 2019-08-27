@@ -10,7 +10,7 @@ document.getElementById("btnProgress").addEventListener('click', () => {
                     document.getElementById(`form-${suma}`).style.display = "block",
 
                     sessionStorage.setItem('value', suma)) :
-
+//
                 (document.getElementById('btnProgress').style.display = "none",
                     document.getElementById('btnSubmit').style.display = "block",
                     document.getElementById(`step${suma}`).setAttribute('class', 'completed'),
