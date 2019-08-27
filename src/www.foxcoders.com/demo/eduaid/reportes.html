@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
-    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
 </head>
 
 <body>
@@ -84,6 +83,7 @@
                                                 Registrate
                                             </a>
                                         </li>
+
                                         <li class="nav-item">
                                             <a href="inscripciones.html" class="nav-link"><i
                                                     class="fa fa-search"></i></a>
@@ -98,55 +98,30 @@
 
         </div>
     </header>
-    <!-- 
-    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)" data-aos="fade-up">
-        <div class="hero-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="page-hrader text-white text-center">
-                            <h1 class="display-3">Reportes</h1>
-                            <div class="page-breadcrumb">
-                                <p><a class="text-white" href="index-2.html">Home</a> - Apply</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- End Hero Area -->
+
     <!--Start Page -->
-    <table class="table">
-        <thead class="thead-dark">
-            <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
-            <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-            </tr>
-            <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-            </tr>
-        </tbody>
+    <div class="container">
+        <div class="hero-area">
+        </div>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Dni</th>
+                    <th scope="col">Nombres</th>
+                    <th scope="col">Apellidos</th>
+                    <th scope="col">Fecha de Nacimiento</th>
+                    <th scope="col">Colegio</th>
+
+                </tr>
+            </thead>
+            <tbody id="containerUser">
+            </tbody>
+
+    </div>
     </table>
+
+    </div>
 
 
     <!-- End Page -->
@@ -155,26 +130,7 @@
         <div class="subscribe-area">
             <div class="container">
                 <div class="row">
-                    <!--  <div class="col-md-12">
-                        <div class="subscribe-wrapper p-5 bg-white">
-                            <div class="row align-items-center">
-                                <div class="col-md-6">
-                                    <div class="subscribe-text">
-                                        <h2>Newsletters</h2>
-                                        <p>Consectetur adipisicing elit, sed do eiusmod tempoe</p>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="subscribe-form">
-                                        <form action="#">
-                                            <input type="email" class="form-control" placeholder="Enter Your Email Here">
-                                            <button type="submit">Subscribe</button>
-                                        </form>
-                                    </div>
-                                </div> 
-                            </div>
-                        </div>
-                    </div> -->
+
                 </div>
             </div>
         </div>
@@ -293,9 +249,8 @@
     <script src="assets/js/jquery.counterup.min.js"></script>
     <script src="assets/js/bootnavbar.js"></script>
     <script src="assets/js/main.js"></script>
-    <script type="module" src="./controller/form.js"></script>
-    <script type="module" src="controller/main.js"></script>
-    <script type="module" src="controller/index.js"></script>
+    <script type="module" src="./controller/main.js"></script>
+    <script type="module" src="./controller/report.js"></script>
 
 </body>
 

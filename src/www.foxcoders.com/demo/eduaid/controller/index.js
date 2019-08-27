@@ -1,4 +1,4 @@
-import { saveDataofInscription } from '../controller/firestore.js'
+import { saveDataofInscription, gettingDataFromFirebase } from './firestore.js';
 
 //datos del estudiante
 const nameOfStudents = document.querySelector('#nameOfStudent');
@@ -23,26 +23,9 @@ const cellphoneAttorney = document.querySelector('#cellphoneAttorney');
 const sendData = document.querySelector('#btnSubmit');
 
 //boton siguiente 
-const btnNext = document.querySelector('#btnProgress');
+//const btnNext = document.querySelector('#btnProgress');
+//const btnGetting = document.querySelector('#getting-data');
 
-
-const obj1 = {
-    nameOfStudents: nameOfStudents.value,
-    lastNameOfStudent: lastNameOfStudent.value,
-    dniOfStudent: dniOfStudent.value,
-    yearOfStudent: yearOfStudent.value,
-    schoolOfStudent: schoolOfStudent.value,
-    user_class: user_class.value,
-    nameOfFather: nameOfFather.value,
-    lastNameOfFather: lastNameOfFather.value,
-    dniOfFather: dniOfFather.value,
-    cellphoneOfFather: cellphoneOfFather.value,
-    emailOfFather: emailOfFather.value,
-    nameAttorney: nameAttorney.value,
-    lastNameAttorney: lastNameAttorney.value,
-    parentescoAttorney: parentescoAttorney.value,
-    cellphoneAttorney: cellphoneAttorney.value
-}
 
 sendData.addEventListener('click', () => {
     const obj = {
@@ -63,34 +46,6 @@ sendData.addEventListener('click', () => {
         cellphoneAttorney: cellphoneAttorney.value
     }
     sessionStorage.setItem('all-data', JSON.stringify(obj));
-    //  JSON.parse(sessionStorage.getItem('all-data')
     saveDataofInscription('clases-pruebas', obj);
 
-})
-
-const validateInformationOfStudent = () => {
-
-    let correctInformation = true;
-    if (nameOfStudents.value.length < 2) {
-        correctInformation = false;
-    }
-    if (lastNameOfStudent.value.length < 2) {
-        correctInformation = false;
-    }
-    if (dniOfStudent.value.length < 8) {
-        correctInformation = false;
-    }
-    if (schoolOfStudent.value.length < 2) {
-        correctInformation = false;
-    }
-    if (!correctInformation) {
-        alert('Algunos campos no están correctos, vuelva a revisarlos');
-    }
-
-    return correctInformation;
-
-}
-
-btnNext.addEventListener('click', () => {
-    validateInformationOfStudent();
-})
+});
