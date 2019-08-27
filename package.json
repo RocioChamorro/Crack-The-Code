@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/RocioChamorro/Crack-The-Code#readme",
   "dependencies": {
-    "css-progress-wizard": "0.0.9"
+    "css-progress-wizard": "0.0.9",
+    "sweetalert2": "^8.16.3"
   }
 }

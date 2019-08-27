@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="assets/css/swiper.min.css">
     <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
 </head>
 
 <body>
@@ -55,9 +58,7 @@
                                 <div class="mobile_site_logo">
                                     <a href=""><img src="assets/images/logo_2.png" alt="logo" class="img-fluid"></a>
                                 </div>
-                                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                                    data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01"
-                                    aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                                     <i class="fa fa-bars"></i>
                                 </button>
                                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
@@ -94,54 +95,11 @@
                     </div>
                 </div>
             </div>
-            <!-- Start Search Modal 
-            <div class="modal fade" id="search_modal">
-                <div class="modal-dialog modal-lg" role="document">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title sm-sub-title">Search Here</h5>
-                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="search-widget">
-                                <form action="#">
-                                    <input type="text" class="form-control home2-opt" placeholder="Search Here">
-                                    <button type="submit" class="home2-opt"><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="search-results">
-                                <h5 class="my-4 sm-sub-title">10 Search Results Found</h5>
-                                <div class="theme-list-2">
-                                    <ul>
-                                        <li><a href="#">Smply dummy text of the printing and typesetting industry</a></li>
-                                        <li><a href="#">Mauris at varius orci. Vestibulum um felis eu nisl pulvinar</a></li>
-                                        <li><a href="#">Welcome To Our Campus For Learn</a></li>
-                                        <li><a href="#">The point of using Lorem Ipsum is that it has a more-or-less </a></li>
-                                        <li><a href="#">has a more-or-less normal distribution of letters, as opposed to using.</a></li>
-                                        <li><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. </a></li>
-                                        <li><a href="#">Build Education Website Using WP</a></li>
-                                        <li><a href="#">Build Education Website Using WordPress </a></li>
-                                        <li><a href="#">And Other Modern Technology</a></li>
-                                        <li><a href="#">assumenda est. Our friendly support team is standing.</a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="button_two" data-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Search Modal -->
+
         </div>
     </header>
-    <!-- End Header -->
-    <!-- Start Hero Area -->
-    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)"
-        data-aos="fade-up">
+
+    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)" data-aos="fade-up">
         <div class="hero-area">
             <div class="container">
                 <div class="row">
@@ -172,19 +130,19 @@
                 <div class="col-md-10 mx-auto">
                     <div class="apply-wrapper">
 
-                        <form action="#" class="apply_form bg_dark_9 p-5 form1" id="form-1">
+                        <form action="#" class="apply_form bg_dark_9 p-5 form1" id="form-1" name="form-of-student">
                             <h2>Llene los datos del estudiante</h2>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" class="form-control" placeholder="Nombres">
+                                        <input type="text" id="nameOfStudent" class="form-control" placeholder="Nombres" name="name-of-student" required>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfStudent" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -192,13 +150,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_first_name">N° DNI</label>
-                                        <input type="text" class="form-control" placeholder="DNI">
+                                        <input type="text" id="dniOfStudent" class="form-control" placeholder="DNI">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Fecha de Nacimiento</label>
-                                        <input type="text" class="form-control" placeholder="Día/Mes/Año">
+                                        <input type="text" id="yearOfStudent" class="form-control" placeholder="Día/Mes/Año">
                                     </div>
                                 </div>
                             </div>
@@ -206,7 +164,7 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_last_name">Colegio</label>
-                                        <input type="text" class="form-control" placeholder="Colegio">
+                                        <input type="text" id="schoolOfStudent" class="form-control" placeholder="Colegio">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -214,17 +172,17 @@
                                         <label for="user_class">Grado Educativo</label>
                                         <select name="user_class" id="user_class" class="form-control">
                                             <option value="0" disabled selected>Seleccione</option>
-                                            <option value="1">1° primaria</option>
-                                            <option value="2">2° primaria</option>
-                                            <option value="3">3° primaria</option>
-                                            <option value="4">4° primaria</option>
-                                            <option value="5">5° primaria</option>
-                                            <option value="6">6° primaria</option>
-                                            <option value="7">1° secundaria</option>
-                                            <option value="8">2° secundaria</option>
-                                            <option value="9">3° secundaria</option>
-                                            <option value="10">4° secundaria</option>
-                                            <option value="10">5° secundaria</option>
+                                            <option value="1°-primaria"></option>1° primaria</option>
+                                            <option value="2°-primaria">2° primaria</option>
+                                            <option value="3°-primaria">3° primaria</option>
+                                            <option value="4°-primaria">4° primaria</option>
+                                            <option value="5°-primaria">5° primaria</option>
+                                            <option value="6°-primaria">6° primaria</option>
+                                            <option value="1°-secundaria">1° secundaria</option>
+                                            <option value="2°-secundaria">2° secundaria</option>
+                                            <option value="3°-secundaria">3° secundaria</option>
+                                            <option value="4°-secundaria">4° secundaria</option>
+                                            <option value="5°-secundaria">5° secundaria</option>
                                         </select>
                                     </div>
                                 </div>
@@ -236,13 +194,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" class="form-control" placeholder="Nombres">
+                                        <input type="text" id="nameOfFather" class="form-control" placeholder="Nombres">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameOfFather" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -250,28 +208,25 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_first_name">N° DNI</label>
-                                        <input type="text" class="form-control" placeholder="DNI">
+                                        <input type="text" id="dniOfFather" class="form-control" placeholder="DNI">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" class="form-control" placeholder="Celular">
+                                        <input type="text" id="cellphoneOfFather" class="form-control" placeholder="Celular">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="form-group">
-                                        <label for="guardian_last_name">Colegio</label>
-                                        <input type="text" class="form-control" placeholder="Colegio">
+                                        <label for="user_last_name">Correo</label>
+                                        <input type="text" id="emailOfFather" class="form-control" placeholder="@">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label for="user_last_name">Correo</label>
-                                        <input type="text" class="form-control" placeholder="@">
-                                    </div>
+
                                 </div>
                             </div>
 
@@ -282,13 +237,13 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_first_name">Ingrese su Nombres</label>
-                                        <input type="text" class="form-control" placeholder="Nombres">
+                                        <input type="text" id="nameAttorney" class="form-control" placeholder="Nombres">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Ingrese sus Apellidos</label>
-                                        <input type="text" class="form-control" placeholder="Apellidos">
+                                        <input type="text" id="lastNameAttorney" class="form-control" placeholder="Apellidos">
                                     </div>
                                 </div>
                             </div>
@@ -296,19 +251,20 @@
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="guardian_first_name">Parentesco</label>
-                                        <input type="text" class="form-control" placeholder="Parentesco">
+                                        <input type="text" id="parentescoAttorney" class="form-control" placeholder="Parentesco">
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group">
                                         <label for="user_last_name">Celular</label>
-                                        <input type="text" class="form-control" placeholder="Celular">
+                                        <input type="text" id="cellphoneAttorney" class="form-control" placeholder="Celular">
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
                     <button id='btnLess' class="button_two mt-7">Atras</button>
+                    <button id='btnSubmit' class="button_two mt-7 btn-submit">Submit</button>
                     <button id='btnProgress' class="button_two mt-7">Siguiente</button>
                 </div>
             </div>
@@ -333,8 +289,7 @@
                                 <div class="col-md-6">
                                     <div class="subscribe-form">
                                         <form action="#">
-                                            <input type="email" class="form-control"
-                                                placeholder="Enter Your Email Here">
+                                            <input type="email" class="form-control" placeholder="Enter Your Email Here">
                                             <button type="submit">Subscribe</button>
                                         </form>
                                     </div>
@@ -353,8 +308,7 @@
                             <div class="single_widget my-xs-4">
                                 <div class="address-widget">
                                     <div class="footer-logo">
-                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt=""
-                                                class="img-fluid"></a>
+                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt="" class="img-fluid"></a>
                                     </div>
                                     <p>900 Lucerne Station Road Terrace, Orlando, FL 32806, USA contact@eduaid.com</p>
                                     <span>+892 5555 444</span>
@@ -462,6 +416,9 @@
     <script src="assets/js/bootnavbar.js"></script>
     <script src="assets/js/main.js"></script>
     <script type="module" src="./controller/form.js"></script>
+    <script type="module" src="controller/main.js"></script>
+    <script type="module" src="controller/index.js"></script>
+
 </body>
 
 
