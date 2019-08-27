@@ -20,7 +20,7 @@ document.getElementById("btnProgress").addEventListener('click', () => {
     }
   }
 })
-
+//
 document.getElementById("btnLess").addEventListener('click', () => {
   let resta = sessionStorage.getItem('value');
 
