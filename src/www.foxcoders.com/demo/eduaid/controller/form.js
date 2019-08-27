@@ -1,4 +1,4 @@
-let suma = 1;
+let suma = sessionStorage.setItem('value',1);
 document.getElementById("btnProgress").addEventListener('click', () => {
         if (sessionStorage.getItem('value')) {
             suma = sessionStorage.getItem('value');

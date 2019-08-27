@@ -19,6 +19,7 @@ const renderizingTable = () => {
                     <td>${element.data().lastNameOfStudent}</td>
                     <td>${element.data().yearOfStudent}</td>
                     <td>${element.data().schoolOfStudent}</td>
+                    <td> <img class='imgRedonda' src="${element.data().photo}" alt="photo"></td>
 
                 </tr>
         
