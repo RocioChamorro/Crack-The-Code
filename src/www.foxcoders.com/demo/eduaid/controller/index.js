@@ -1,5 +1,5 @@
 import { saveDataofInscription, gettingDataFromFirebase } from './firestore.js';
-import { capturePhoto} from './photo.js'
+import { capturePhoto } from './photo.js'
 /* import { getsessionStorage} from './controller-perfil.js' */
 
 
@@ -24,6 +24,23 @@ const cellphoneAttorney = document.querySelector('#cellphoneAttorney');
 // boton enviar
 
 const sendData = document.querySelector('#btnSubmit');
+const myCheck=document.querySelector('#myCheck');
+/* const autollenado = () => { */
+    myCheck.addEventListener('change', (e)=>{
+
+    if (e.target.checked) {
+        document.querySelector('#nameAttorney').value=document.querySelector('#nameOfFather').value;
+        document.querySelector('#lastNameAttorney').value=document.querySelector('#lastNameOfFather').value;
+        document.querySelector('#cellphoneAttorney').value=document.querySelector('#cellphoneOfFather').value;
+    } else {
+        document.querySelector('#nameAttorney').value='';
+        document.querySelector('#lastNameAttorney').value='';
+        document.querySelector('#cellphoneAttorney').value='';
+       
+    }
+});
+    
+/* } */
 
 //boton siguiente 
 //const btnNext = document.querySelector('#btnProgress');
