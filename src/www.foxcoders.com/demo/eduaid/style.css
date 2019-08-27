@@ -1040,6 +1040,10 @@ p2 {
     padding-left: 5px;
 }
 
+.color-text {
+    color: #fff;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .mb-3d-5 {
         padding-bottom: 3rem;
