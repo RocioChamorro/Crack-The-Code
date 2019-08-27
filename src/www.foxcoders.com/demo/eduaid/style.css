@@ -45,15 +45,18 @@ CSS Index
 *  3.Media Query
 * ============================
 */
+
 .progress-indicator {
     margin: 5px 0 1em;
     padding: 22px 0 0;
 }
+
 #container-btn {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
 }
+
 .form2 {
     display: none;
 }
@@ -68,6 +71,35 @@ CSS Index
 
 #btnSubmit {
     display: none;
+}
+
+.put-color {
+    color: #fff;
+}
+
+.left {
+    text-align: left;
+}
+
+.teaching {
+    text-align: justify;
+}
+
+.size-img {
+    height: 30px;
+    width: 30px;
+}
+
+.margin-teaching {
+    margin-left: 30%;
+}
+
+.color-team {
+    background-color: #fff;
+}
+
+.button-teaching {
+    margin-left: 43%;
 }
 
 .default_bg {
@@ -95,7 +127,7 @@ CSS Index
 }
 
 .dark_3_bg {
-    background-color: #f5f5f5;
+    background-color: #fff;
 }
 
 .black_bg {
@@ -127,10 +159,24 @@ CSS Index
     padding-bottom: 130px;
 }
 
+.without-margin {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.without-botton {
+    padding-top: 0px;
+    padding-bottom: 50px;
+}
+
+.padding-tech {
+    padding-right: 30px;
+}
+
 @media (min-width: 768px) and (max-width: 991px) {
     .section-ptb {
         padding-top: 80px;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
     }
 }
 
@@ -1124,7 +1170,7 @@ p2 {
 
 @media (min-width: 992px) {
     .pr-120-lg {
-        padding-right: 120px;
+        padding-right: 30px;
     }
 }
 
@@ -2280,7 +2326,7 @@ body p {
 }
 
 .single-service-3.active {
-    background-color: #ff5202;
+    background-color: #fff;
 }
 
 .single-service-3.active h4 {
@@ -2293,24 +2339,28 @@ body p {
     font-weight: 500;
 }
 
+
+/* 
 .single-service-3.active:hover {
-    background-color: #ff5202;
+    background-color: #fff;
     color: #fff;
 }
 
 .single-service-3.active:hover a {
     color: #fff;
-}
+} */
 
-.single-service-3.active:hover h4 {
+
+/* .single-service-3.active:hover h4 {
     color: #fff;
 }
 
 .single-service-3.active:hover .service-icon {
     padding: 15px;
     display: inline-block;
-    background-color: #ff5202;
+    background-color: #fff;
 }
+ */
 
 .single-service-3 .service-icon {
     padding: 15px;
@@ -2325,7 +2375,7 @@ body p {
 }
 
 .single-service-3 a {
-    color: #ff5202;
+    color: #C64696;
     transition: all .4s linear 0s;
 }
 
@@ -2333,7 +2383,8 @@ body p {
     transition: all .4s linear 0s;
 }
 
-.single-service-3 a:hover {
+
+/* .single-service-3 a:hover {
     text-decoration: none;
 }
 
@@ -2341,12 +2392,16 @@ body p {
     padding-left: 5px;
 }
 
-.single-service-3:hover {
-    background-color: #ff5202;
-    color: #fff;
-}
+ */
 
-.single-service-3:hover a {
+
+/* .single-service-3:hover {
+    background-color: #C64696;
+    color: #fff;
+} */
+
+
+/* .single-service-3:hover a {
     color: #fff;
 }
 
@@ -2358,7 +2413,7 @@ body p {
     display: inline-block;
     background-color: #fff;
     border-radius: 50%;
-}
+} */
 
 .single-service-4 {
     transition: all .4s linear 0s;
