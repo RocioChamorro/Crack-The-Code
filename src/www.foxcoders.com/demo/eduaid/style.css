@@ -58,6 +58,10 @@ CSS Index
     justify-content: space-between;
 }
 
+.color-a {
+    color: white;
+}
+
 .form2 {
     display: none;
 }
@@ -66,14 +70,18 @@ CSS Index
     display: none;
     padding: 0;
 }
-#labe{
+
+#labe {
     margin: 1px 9px 15px 40px;
 }
-input[type=checkbox], input[type=radio] {
+
+input[type=checkbox],
+input[type=radio] {
     box-sizing: border-box;
     padding: 0;
     margin: -18px 13px 0px 16px;
 }
+
 .imgRedonda {
     width: 150px;
     height: 150px;
