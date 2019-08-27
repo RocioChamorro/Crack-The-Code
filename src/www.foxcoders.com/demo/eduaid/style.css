@@ -43,6 +43,12 @@ CSS Index
 *  3.Media Query
 * ============================
 */
+.form2{
+  display: none;
+}
+.form3{
+  display: none;
+}
 .default_bg {
   background-color: #0d1028; }
 
