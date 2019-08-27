@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from www.foxcoders.com/demo/eduaid/apply_form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Aug 2019 23:24:13 GMT -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Eduaid Responsive Html5 Template</title>
+    <link rel="stylesheet" href="../../../../node_modules/css-progress-wizard/css/progress-wizard.min.css">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/6.4.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js"></script>
+    <script src="https://firebase.google.com/docs/web/setup#config-web-app"></script>
+</head>
+
+<body>
+    <!-- Start Header -->
+    <header>
+        <!-- Start Header Top -->
+        <div class="header-top dark_2_bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="header-top-content">
+                            <div class="contact-info">
+                                <ul>
+                                    <li><i class="fas fa-map-marker-alt"></i> Calle Jose Toribio Polo #327 - Miraflores
+                                    </li>
+                                    <li><i class="fas fa-mobile-alt"></i> +51 (924 084 937)</li>
+                                    <li><i class="fas fa-envelope"></i> crack@crackthecode.pe</li>
+                                </ul>
+                            </div>
+                            <div class="header-button">
+                                <a href="apply_form.html" class="button_two_plane">Clase de prueba</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Header Top -->
+        <div class="main-menu-area py-3">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-menu-2">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="mobile_site_logo">
+                                    <a href=""><img src="assets/images/logo_2.png" alt="logo" class="img-fluid"></a>
+                                </div>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+
+                                    <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">Nosotros</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="about.html">Cursos</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="courses.html">Blog</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="students.html" class="nav-link" id="blod_pages">
+                                                Concursos
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="apply_form.html" class="nav-link" id="blod_pages">
+                                                Registrate
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="inscripciones.html" class="nav-link"><i
+                                                    class="fa fa-search"></i></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- 
+    <section class="hero-section height-470" style="background-image:url(assets/images/about_us.png)" data-aos="fade-up">
+        <div class="hero-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="page-hrader text-white text-center">
+                            <h1 class="display-3">Reportes</h1>
+                            <div class="page-breadcrumb">
+                                <p><a class="text-white" href="index-2.html">Home</a> - Apply</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- End Hero Area -->
+    <!--Start Page -->
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Handle</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>@mdo</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>@fat</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>@twitter</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- End Page -->
+    <!-- Start Footer -->
+    <footer data-aos="fade-up">
+        <div class="subscribe-area">
+            <div class="container">
+                <div class="row">
+                    <!--  <div class="col-md-12">
+                        <div class="subscribe-wrapper p-5 bg-white">
+                            <div class="row align-items-center">
+                                <div class="col-md-6">
+                                    <div class="subscribe-text">
+                                        <h2>Newsletters</h2>
+                                        <p>Consectetur adipisicing elit, sed do eiusmod tempoe</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="subscribe-form">
+                                        <form action="#">
+                                            <input type="email" class="form-control" placeholder="Enter Your Email Here">
+                                            <button type="submit">Subscribe</button>
+                                        </form>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-area default_bg">
+            <div class="footer-top section-ptb-2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_widget my-xs-4">
+                                <div class="address-widget">
+                                    <div class="footer-logo">
+                                        <a href="index-2.html"><img src="assets/images/footer_logo.png" alt="" class="img-fluid"></a>
+                                    </div>
+                                    <p>900 Lucerne Station Road Terrace, Orlando, FL 32806, USA contact@eduaid.com</p>
+                                    <span>+892 5555 444</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-3d-5">
+                            <div class="single_widget">
+                                <h3>Useful Links</h3>
+                                <div class="widget-list">
+                                    <ul>
+                                        <li><a href="#">About Us</a></li>
+                                        <li><a href="#">Our Instructors</a></li>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">History</a></li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                        <li><a href="#">Service Plus</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 mb-xs-5">
+                            <div class="single_widget">
+                                <h3>Our Services</h3>
+                                <div class="widget-list">
+                                    <ul>
+                                        <li><a href="#">CSE Engeering</a></li>
+                                        <li><a href="#">Graduation</a></li>
+                                        <li><a href="#">Courses</a></li>
+                                        <li><a href="#">Admission</a></li>
+                                        <li><a href="#">Internation</a></li>
+                                        <li><a href="#">Faqs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="single_widget">
+                                <h3>Latest News</h3>
+                                <div class="widget-item">
+                                    <div class="widget-image">
+                                        <a href="#"><img src="assets/images/blog_01.jpg" alt="blog one" /></a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h5><a href="#">7 Step Social Media Marke ting Strategy</a></h5>
+                                        <div class="widget-meta">
+                                            <span>05 Jan 2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="widget-item">
+                                    <div class="widget-image">
+                                        <a href="#"><img src="assets/images/blog_02.jpg" alt="blog one" /></a>
+                                    </div>
+                                    <div class="widget-content">
+                                        <h5><a href="#">7 Step Social Media Marke ting Strategy</a></h5>
+                                        <div class="widget-meta">
+                                            <span>05 Jan 2019</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom-wrapper border-top py-3">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="footer-bottom">
+                                <div class="copyright-text">
+                                    <p>Eduaid 2019. All Rights Reserved.</p>
+                                </div>
+                                <div class="social-accounts">
+                                    <ul>
+                                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-top">
+            <div class="scroll-icon">
+                <i class="fas fa-arrow-down"></i>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="assets/js/jquery-3.4.0.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/swiper.min.js"></script>
+    <script src="assets/js/jquery.fancybox.min.js"></script>
+    <script src="assets/js/jquery.waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/bootnavbar.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script type="module" src="./controller/form.js"></script>
+    <script type="module" src="controller/main.js"></script>
+    <script type="module" src="controller/index.js"></script>
+
+</body>
+
+
+<!-- Mirrored from www.foxcoders.com/demo/eduaid/apply_form.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 26 Aug 2019 23:24:13 GMT -->
+
+</html>
