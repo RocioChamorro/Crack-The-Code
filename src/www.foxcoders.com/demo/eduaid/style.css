@@ -57,7 +57,16 @@ CSS Index
     flex-flow: row wrap;
     justify-content: space-between;
 }
-
+.fa-users:before {
+   
+    color: fuchsia;
+}
+a {
+    color: white;
+}
+a:hover {
+    color: white;
+}
 .color-a {
     color: white;
 }
